@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { SidebarModule } from './components/sidebar/sidebar.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SidebarModule } from './components/sidebar/sidebar.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    SidebarModule
+    SidebarModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
