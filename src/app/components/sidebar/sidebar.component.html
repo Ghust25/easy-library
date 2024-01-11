@@ -10,6 +10,7 @@
           <mat-icon>{{item.icon}}</mat-icon> {{ !collapsedNav ? item.name : '' }}
         </li>
       </ul>
+
     </mat-drawer>
     <mat-drawer-content [ngClass]="{'sidenav-collapsed': collapsedNav && !mobileQuery.matches}">
       <mat-toolbar color="primary">
