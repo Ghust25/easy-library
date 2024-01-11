@@ -1,6 +1,6 @@
 export const SidbarItems = [
-  {icon: 'home', name: 'Dashboard'},
-  {icon: 'library_books', name: 'Livros'},
-  {icon: 'supervisor_account', name: 'Usuários'},
-  {icon: 'compare_arrows', name: 'Empréstimos'}
+  {icon: 'home', name: 'Dashboard', router: '/'},
+  {icon: 'library_books', name: 'Livros', router: '/livros'},
+  {icon: 'supervisor_account', name: 'Usuários', router: '/usuario'},
+  {icon: 'compare_arrows', name: 'Empréstimos', router: '/emprestimo'}
 ]

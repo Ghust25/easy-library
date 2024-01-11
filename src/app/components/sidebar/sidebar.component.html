@@ -7,7 +7,9 @@
       </div>
       <ul>
         <li (click)="sideItemActive = item.name" [ngClass]="{'border-start border-white border-5': sideItemActive === item.name}" *ngFor="let item of sidbarItems" class="sidebar-item">
-          <mat-icon>{{item.icon}}</mat-icon> {{ !collapsedNav ? item.name : '' }}
+          <a [routerLink]="item.router">
+            <mat-icon>{{item.icon}}</mat-icon> {{ !collapsedNav ? item.name : '' }}
+          </a>
         </li>
       </ul>
 
@@ -29,7 +31,7 @@
 
       <div class="container mt-5">
         <div class="row w-100">
-
+          <router-outlet></router-outlet>
         </div>
       </div>
     </mat-drawer-content>

@@ -25,7 +25,7 @@ mat-drawer {
   &.sidenav-collapsed {
     width: 100px;
 
-    ul li {
+    ul li a {
       justify-content: center;
     }
 
@@ -51,7 +51,7 @@ mat-drawer {
   ul {
     padding: 0;
 
-    .sidebar-item {
+    .sidebar-item a {
       display: flex;
       justify-content: normal;
       align-items: end;
@@ -60,6 +60,7 @@ mat-drawer {
       cursor: pointer;
       margin: 10px;
       padding: 10px;
+      text-decoration:none !important;
 
       .mat-icon {
         margin-right: 5px;
