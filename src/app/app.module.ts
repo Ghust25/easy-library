@@ -9,16 +9,20 @@ import { SidebarModule } from './components/sidebar/sidebar.module';
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LivrosComponent } from './pages/livros/livros.component';
-import { UsuarioComponent } from './pages/usuario/usuario.component';
 import { EmprestimoComponent } from './pages/emprestimo/emprestimo.component';
+import { UsuarioComponent } from './pages/usuario/usuario.component';
+import { CpfPipe } from './pipes/cpf.pipe';
+import { CelularPipe } from './pipes/celular.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     LivrosComponent,
+    EmprestimoComponent,
     UsuarioComponent,
-    EmprestimoComponent
+    CpfPipe,
+    CelularPipe,
   ],
   imports: [
     BrowserModule,
@@ -28,6 +32,7 @@ import { EmprestimoComponent } from './pages/emprestimo/emprestimo.component';
     SidebarModule,
     HttpClientModule,
   ],
+  exports:[],
   providers: [],
   bootstrap: [AppComponent]
 })
